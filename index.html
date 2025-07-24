@@ -3,25 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+    <title>Your Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <div id="intro">
+        <h1>Your Name<br />Portfolio</h1>
+        <p>Data Enthusiast skilled in SQL, Python, Tableau, Power BI <a href="https://your-social-link">@YourHandle</a></p>
+        <ul class="actions">
+            <li><a href="#main" class="button icon solid solo fa-arrow-down">Continue</a></li>
+        </ul>
+    </div>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+            <ul class="links">
+                <li><a href="index.html">Projects</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/your-linkedin/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/your-github" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <h1>Alex Quirarte's Portfolio</h1>
-        <p>This is a simple website template for GitHub Pages. Customize it to suit your needs!</p>
+    <main id="main">
+        <article class="post featured">
+            <header class="major">
+                <h2><a href="#">Sample Project<br />Description</a></h2>
+                <p>In this project, we explore a sample dataset and create visualizations to uncover insights.</p>
+            </header>
+            <a href="https://github.com/your-github/sample-project" class="image main"><img src="images/sample.jpg" alt="Sample Project" /></a>
+            <ul class="actions special">
+                <li><a href="https://github.com/your-github/sample-project" class="button large">View Project</a></li>
+            </ul>
+        </article>
     </main>
     <footer>
-        <p>&copy; 2025 Alex Quirarte. All rights reserved.</p>
+        <p>© 2025 Alex Quirarte. All rights reserved.</p>
     </footer>
 </body>
 </html>

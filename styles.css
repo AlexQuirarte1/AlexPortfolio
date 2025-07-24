@@ -5,6 +5,41 @@ body {
     line-height: 1.6;
 }
 
+#intro {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #f4f4f4;
+}
+
+#intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#intro p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+#intro .actions {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+#intro .actions .button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+#intro .actions .button:hover {
+    background: #555;
+}
+
 header {
     background: #333;
     color: #fff;
@@ -12,29 +47,103 @@ header {
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-nav ul li {
-    display: inline;
+nav ul.links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul.links li {
     margin: 0 1rem;
 }
 
-nav ul li a {
+nav ul.links li a {
     color: #fff;
     text-decoration: none;
 }
 
-nav ul li a:hover {
+nav ul.links li a:hover {
     text-decoration: underline;
+}
+
+nav ul.icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul.icons li {
+    margin: 0 0.5rem;
+}
+
+nav ul.icons li a {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+nav ul.icons li a:hover {
+    color: #ccc;
 }
 
 main {
     max-width: 800px;
     margin: 2rem auto;
     padding: 0 1rem;
+}
+
+article.post.featured {
+    margin-bottom: 2rem;
+}
+
+article.post.featured header.major {
+    text-align: center;
+}
+
+article.post.featured header.major h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+article.post.featured header.major p {
+    color: #555;
+}
+
+article.post.featured .image.main {
+    display: block;
+    margin: 1rem 0;
+}
+
+article.post.featured .image.main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+article.post.featured .actions.special {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+article.post.featured .actions.special .button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+article.post.featured .actions.special .button:hover {
+    background: #555;
 }
 
 footer {
@@ -48,8 +157,24 @@ footer {
 }
 
 @media (max-width: 600px) {
-    nav ul li {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul.links li {
         display: block;
         margin: 0.5rem 0;
+    }
+
+    nav ul.icons li {
+        margin: 0.5rem;
+    }
+
+    #intro h1 {
+        font-size: 1.8rem;
+    }
+
+    #intro p {
+        font-size: 1rem;
     }
 }
