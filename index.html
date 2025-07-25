@@ -40,13 +40,23 @@
             </ul>
         </article>
         <style type='text/css'>
-            .embeddedServiceHelpButton .helpButton .uiButton {
-                background-color: #1295D8;
-                font-family: "Arial", sans-serif;
+           .embeddedServiceHelpButton .helpButton .uiButton {
+		        background-color: #1295D8;
+		        font-family: "Arial", sans-serif;
+
+		        margin-top: -88px; /*moved button up*/
+                margin-right: -12px; /*moved button left*/
+
+	        }
+	        .embeddedServiceHelpButton .helpButton .uiButton:focus {
+		    outline: 1px solid #1295D8;
+	        }
+
+            button[embeddedService-chatHeader_chatHeader] {
+                display: inline-block;    
+                padding: 4px;
             }
-            .embeddedServiceHelpButton .helpButton .uiButton:focus {
-                outline: 1px solid #1295D8;
-            }
+
         </style>
 
         <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
